@@ -1,33 +1,19 @@
-package Patterns.src.Builder;
 
 public class Dealership {
     public static void main(String[] args) {
         
-        System.out.println("--- 1. Standard Family Sedan ---");
-        // Only required parameters and a few optional ones
-        Car familyCar = new Car.Builder("Volkswagen", "Jetta")
-                               .setNumberOfDoors(4)
-                               .withGPS(true) // Setting GPS to true
-                               .build();
-        System.out.println(familyCar);
+         Director director = new Director();
 
-        System.out.println("\n--- 2. Custom Electric Sports Car ---");
-        // Setting all options in a clean, readable sequence
-        Car sportsEV = new Car.Builder("Tesla", "Roadster")
-                              .setColor("Deep Red")
-                              .setNumberOfDoors(2)
-                              .setEngineType("Electric")
-                              .withGPS(true)
-                              .withSunroof(true) // Setting Sunroof to true
-                              .build();
-        System.out.println(sportsEV);
+        // Builder para o carro desportivo
+        SportsCarBuilder sportsBuilder = new SportsCarBuilder();
+        director.constructSportsCar(sportsBuilder);
+        Car sportsCar = sportsBuilder.getResult();
+        System.out.println(sportsCar);
 
-        System.out.println("\n--- 3. Basic Utility Car ---");
-        // Uses mostly default values
-        Car utilityCar = new Car.Builder("Ford", "Fiesta")
-                                .setNumberOfDoors(3)
-                                .setColor("White")
-                                .build();
-        System.out.println(utilityCar);
+        // Builder para o SUV
+        SUVCarBuilder suvBuilder = new SUVCarBuilder();
+        director.constructSUV(suvBuilder);
+        Car suv = suvBuilder.getResult();
+        System.out.println(suv);
     }
 }
