@@ -1,3 +1,5 @@
+package patterns.factorymethod;
+
 public class Camiao implements Veiculo{
 
     @Override
