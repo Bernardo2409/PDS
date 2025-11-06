@@ -2,16 +2,18 @@ package Factory_Method;
 
 public class Main {
     public static void main(String[] args) {
-        // Logística Terrestre
-        Logistica logisticaTerrestre = new LogisticaTerrestre();
-        System.out.println("Logística Terrestre:");
-        logisticaTerrestre.planearEntrega("Cidade A"); 
+    // Land Logistics
+    CreatorLogistics landLogistics = new LandLogistics();
+    System.out.println("Land Logistics:");
+    landLogistics.planDelivery();
 
         System.out.println("---");
 
-        // Logística Marítima
-        Logistica logisticaMaritima = new LogisticaMaritima();
-        System.out.println("Logística Marítima:");
-        logisticaMaritima.planearEntrega("Porto B"); 
-    }   
+        // Sea Logistics
+        CreatorLogistics seaLogistics = new SeaLogistics();
+        System.out.println("Sea Logistics:");
+        seaLogistics.planDelivery();
+    }
+
+
 }
