@@ -1,3 +1,5 @@
+package Prototype;
+
 class ConcretePrototype implements Prototype {
     private String name;
 

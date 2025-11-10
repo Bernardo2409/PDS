@@ -1,3 +1,5 @@
+package Adapter;
+
 public class AudioPlayer implements MediaPlayer {
     private MediaAdapter mediaAdapter;
 

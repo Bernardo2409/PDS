@@ -1,3 +1,6 @@
+package Adapter;
+
+
 public class MediaAdapter implements MediaPlayer {
     private OldMediaPlayer oldMediaPlayer;
 

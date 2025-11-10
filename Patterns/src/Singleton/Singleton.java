@@ -1,3 +1,5 @@
+package Singleton;
+
 // Classe Singleton
 public class Singleton {
     // Instância privada e estática da classe
