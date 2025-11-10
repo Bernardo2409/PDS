@@ -4,5 +4,5 @@ public class Main {
 
         audioPlayer.play("mp3", "beyond the horizon.mp3");
         audioPlayer.play("oldFormat", "old_song.old");
-    }
+    } 
 }
