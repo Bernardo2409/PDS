@@ -1,0 +1,3 @@
+Order order1 (SimpleOrder) has 2 payments
+Order order2 (ExpressOrder) has 2 payments
+Order order3 (InternationalOrder) has 1 payments
