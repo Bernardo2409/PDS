@@ -1,6 +1,5 @@
 package Learning02;
 
-// TODO: Implementar interface Strategy
 public interface DeliveryMethod {
-
+    public void deliver(Meal meal);
 }

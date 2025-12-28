@@ -1,6 +1,6 @@
 package Learning02;
 
-// TODO: Implementar interface Observer
+// Interface Observer - define o contrato para receber notificações
 public interface RestaurantModule {
-
+    void update(String message);
 }

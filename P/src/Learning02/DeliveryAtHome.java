@@ -1,6 +1,14 @@
 package Learning02;
 
-// TODO: Implementar DeliveryAtHome
-public class DeliveryAtHome {
+public class DeliveryAtHome implements DeliveryMethod {
+
+    public DeliveryAtHome() {
+        
+    }
+
+    @Override
+    public void deliver(Meal meal) {
+        System.out.println("Delivering meal at home");
+    }
 
 }

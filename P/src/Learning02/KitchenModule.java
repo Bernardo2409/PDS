@@ -1,6 +1,10 @@
 package Learning02;
 
-// TODO: Implementar KitchenModule (Observer)
-public class KitchenModule {
+// Concrete Observer - Módulo da Cozinha
+public class KitchenModule implements RestaurantModule {
 
+    @Override
+    public void update(String message) {
+        System.out.println("[KITCHEN] Received notification: " + message);
+    }
 }

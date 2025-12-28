@@ -1,6 +1,10 @@
 package Learning02;
 
-// TODO: Implementar WaiterModule (Observer)
-public class WaiterModule {
+// Concrete Observer - Módulo do Empregado
+public class WaiterModule implements RestaurantModule {
 
+    @Override
+    public void update(String message) {
+        System.out.println("[WAITER] Received notification: " + message);
+    }
 }
