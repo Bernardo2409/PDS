@@ -5,8 +5,10 @@ public class Meal {
     private String name;
     private String chef;
 
-    public Meal(String type) {
+    public Meal(String type, String name, String chef) {
         this.type = type;
+        this.name = name;
+        this.chef = chef;
     }
 
     public String getType() {
@@ -39,5 +41,10 @@ public class Meal {
 
     public void deliver(DeliveryMethod method) {
         method.deliver(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Meal [type=" + type + ", name=" + name + ", chef=" + chef + "]";
     }
 }

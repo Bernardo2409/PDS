@@ -3,15 +3,21 @@ package Learning02;
 // TODO: Implementar Factory
 public class MealFactory {
     public static Meal createMeal(String type, String name, String chef) {
+        Meal meal;
         switch (type) {
             case "normal":
-                return new NormalMeal(type, name, chef);
+                meal = new NormalMeal(type, name, chef);
+                break;
             case "vegetarian":
-                return new VegetarianMeal(type, name, chef);
+                meal = new VegetarianMeal(type, name, chef);
+                break;
             case "gourmet":
-                return new GourmetMeal(type, name, chef);
+                meal = new GourmetMeal(type, name, chef);
+                break;
             default:
                 throw new IllegalArgumentException("Invalid meal type");
         }
+        MealRegistry.getInstance().addMeal(name, meal);
+        return meal;
     }
 }

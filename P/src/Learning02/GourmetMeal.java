@@ -2,7 +2,7 @@ package Learning02;
 
 public class GourmetMeal extends Meal {
     public GourmetMeal(String type, String name, String chef) {
-        super(type);
+        super(type, name, chef);
         System.out.println("GourmetMeal created");
     }
 

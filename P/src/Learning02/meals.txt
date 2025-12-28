@@ -1,0 +1,3 @@
+Meal [type=vegetarian, name=meal2, chef=Sofia]
+Meal [type=normal, name=meal1, chef=Carlos]
+Meal [type=gourmet, name=meal3, chef=Miguel]

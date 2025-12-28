@@ -4,7 +4,7 @@ public class OldKitchenAdapter implements DeliveryMethod {
 
     private OldKitchen oldKitchen;
 
-    public OldKitchenAdapter(OldKitchen oldKitchen, String dishName) {
+    public OldKitchenAdapter(OldKitchen oldKitchen) {
         this.oldKitchen = oldKitchen;
     }
 

@@ -2,7 +2,7 @@ package Learning02;
 
 public class VegetarianMeal extends Meal {
     public VegetarianMeal(String type, String name, String chef) {
-        super(type);
+        super(type, name, chef);
         System.out.println("VegetarianMeal created");
     }
 

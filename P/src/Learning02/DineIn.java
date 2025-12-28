@@ -8,6 +8,7 @@ public class DineIn implements DeliveryMethod {
     @Override
     public void deliver(Meal meal) {
         System.out.println("Delivering meal at dine in");
+        RestaurantCenter.getInstance().notifyObservers(null, "Meal served at table: " + meal.getName());
     }
 
 }

@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("\nPart C: Using old kitchen system");
         OldKitchen oldKitchen = new OldKitchen();
-        DeliveryMethod adapter = new OldKitchenAdapter(oldKitchen, "Francesinha");
+        DeliveryMethod adapter = new OldKitchenAdapter(oldKitchen);
         meal1.deliver(adapter);
 
         MealRegistry.getInstance().writeToFile();

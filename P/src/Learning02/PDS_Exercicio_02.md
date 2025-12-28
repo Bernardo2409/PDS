@@ -49,36 +49,35 @@ Use `RestaurantCenter` (Singleton) para gerir as notificações.
 ---
 
 ## Part E: Registo de Pedidos
-Registe todas as operações num ficheiro `orders.txt` na pasta `Learning02`.
+Registe todas as operações num ficheiro `meals.txt` na pasta `Learning02`.
 
 ---
 
 ## Output Esperado:
 ```
 Part A: Creating meals
-NormalMeal meal1 created for client Carlos
-VegetarianMeal meal2 created for client Sofia
-GourmetMeal meal3 created for client Miguel
+NormalMeal created
+VegetarianMeal created
+GourmetMeal created
 
 Part B: Delivering meals
-Meal meal1 delivered via HomeDelivery
-Meal meal2 delivered via TakeAway
-Meal meal3 delivered via DineIn
+Delivering meal at home
+Delivering meal to take away
+Delivering meal at dine in
 
 Part C: Using old kitchen system
-Meal meal1 prepared using adapter
-[OLD KITCHEN] Preparing dish: Francesinha
+[OLD KITCHEN] Preparing dish: meal1
+File written with order operations
 
 Part D: Notifications
-Meal meal1 delivered via HomeDelivery
-Module Kitchen received notification from meal1
-Module Waiter received notification from meal1
-
-File written with meal operations
-Content of file "orders.txt":
-Order meal1 (NormalMeal) has 2 deliveries
-Order meal2 (VegetarianMeal) has 1 deliveries
-Order meal3 (GourmetMeal) has 1 deliveries
+Delivering meal at home
+[KITCHEN] Received notification: Meal delivered at home: meal1
+[WAITER] Received notification: Meal delivered at home: meal1
+File written with order operations
+Content of file "meals.txt":
+Meal [type=vegetarian, name=meal2, chef=Sofia]
+Meal [type=normal, name=meal1, chef=Carlos]
+Meal [type=gourmet, name=meal3, chef=Miguel]
 ```
 
 ---

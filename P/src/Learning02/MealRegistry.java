@@ -14,12 +14,17 @@ public class MealRegistry {
     private HashMap<String, Meal> meals;
 
     private MealRegistry() {
+        meals = new HashMap<>();
     }
 
     public static MealRegistry getInstance() {
         if (instance == null)
             instance = new MealRegistry();
         return instance;
+    }
+
+    public void addMeal(String id, Meal meal) {
+        meals.put(id, meal);
     }
 
     public void writeToFile() {
@@ -34,7 +39,7 @@ public class MealRegistry {
     }
 
     public void printFileContent() {
-        System.out.println("Content of file \"orders.txt\":");
+        System.out.println("Content of file \"meals.txt\":");
         try (BufferedReader reader = new BufferedReader(new FileReader("src/Learning02/meals.txt"))) {
             String line;
             while ((line = reader.readLine()) != null)
