@@ -8,7 +8,7 @@ public class DeliveryAtHome implements DeliveryMethod {
 
     @Override
     public void deliver(Meal meal) {
-        System.out.println("Delivering meal at home");
+        System.out.println("Delivering meal " + meal.getName() + " at home");
         RestaurantCenter.getInstance().notifyObservers(null, "Meal delivered at home: " + meal.getName());
     }
 

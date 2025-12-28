@@ -8,11 +8,6 @@ public class NormalMeal extends Meal {
     }
 
     @Override
-    public void prepare() {
-        System.out.println("Preparing meal");
-    }
-
-    @Override
     public void deliver(DeliveryMethod method) {
         method.deliver(this);
     }

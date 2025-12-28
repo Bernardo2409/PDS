@@ -35,10 +35,6 @@ public class Meal {
         this.chef = chef;
     }
 
-    public void prepare() {
-        System.out.println("Preparing meal");
-    }
-
     public void deliver(DeliveryMethod method) {
         method.deliver(this);
     }
