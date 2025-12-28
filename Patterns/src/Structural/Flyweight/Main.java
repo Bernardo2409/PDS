@@ -18,7 +18,6 @@ public class Main {
         Forest forest = new Forest();
 
         System.out.println("Flyweight Pattern Demo - Forest with " + TREES_TO_DRAW + " trees");
-        System.out.println("=".repeat(50));
 
         // Plant many trees with only a few tree types
         for (int i = 0; i < TREES_TO_DRAW / 2; i++) {

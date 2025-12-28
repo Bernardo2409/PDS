@@ -9,7 +9,6 @@ package Command;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Command Pattern Demo - Remote Control");
-        System.out.println("=".repeat(50));
 
         // Receiver
         Light livingRoomLight = new Light();

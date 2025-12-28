@@ -9,7 +9,6 @@ package Iterator;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Iterator Pattern Demo - Social Network");
-        System.out.println("=".repeat(50));
 
         Facebook facebook = new Facebook();
 

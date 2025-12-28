@@ -9,7 +9,6 @@ package Memento;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Memento Pattern Demo - Text Editor with Undo");
-        System.out.println("=".repeat(50));
 
         Editor editor = new Editor();
         History history = new History();

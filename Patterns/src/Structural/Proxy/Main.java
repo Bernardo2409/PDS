@@ -10,7 +10,6 @@ package Proxy;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Proxy Pattern Demo - YouTube Caching");
-        System.out.println("=".repeat(50));
 
         YouTubeCacheProxy youtubeProxy = new YouTubeCacheProxy();
 

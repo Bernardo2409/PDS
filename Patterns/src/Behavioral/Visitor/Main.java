@@ -9,7 +9,6 @@ package Visitor;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Visitor Pattern Demo - Shape Export");
-        System.out.println("=".repeat(50));
 
         // Create shapes
         Dot dot = new Dot(1, 2);

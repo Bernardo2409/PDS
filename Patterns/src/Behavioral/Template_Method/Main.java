@@ -10,7 +10,6 @@ package Template_Method;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Template Method Pattern Demo - Data Mining");
-        System.out.println("=".repeat(50));
 
         System.out.println("\n--- Mining PDF File ---");
         DataMiner pdfMiner = new PDFDataMiner();

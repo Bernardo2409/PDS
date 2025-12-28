@@ -9,7 +9,6 @@ package Chain_of_Responsibility;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Chain of Responsibility Pattern Demo");
-        System.out.println("=".repeat(50));
 
         // Build the chain: Monkey -> Squirrel -> Dog
         Handler monkey = new MonkeyHandler();

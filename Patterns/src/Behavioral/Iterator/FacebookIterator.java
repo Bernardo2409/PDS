@@ -13,6 +13,7 @@ public class FacebookIterator implements ProfileIterator {
     private List<String> emails;
 
     public FacebookIterator(Facebook facebook, String type, String profileEmail) {
+    
         this.facebook = facebook;
         this.type = type;
         this.profileEmail = profileEmail;

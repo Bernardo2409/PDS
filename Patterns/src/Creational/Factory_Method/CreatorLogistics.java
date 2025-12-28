@@ -1,15 +1,19 @@
 package Factory_Method;
 
-public class CreatorLogistics {
+/**
+ * Creator - declares the factory method that returns Vehicle objects.
+ * The class is abstract because the factory method must be implemented
+ * by concrete subclasses.
+ */
+public abstract class CreatorLogistics {
 
-    public Vehicle createVehicle() {
-    // default implementation (can be overridden)
-    return new Truck();
-}
+    // Factory Method - subclasses must implement this
+    public abstract Vehicle createVehicle();
 
-public void planDelivery() {
-    Vehicle v = createVehicle();
-    v.deliver();
+    // Business logic that uses the factory method
+    public void planDelivery() {
+        Vehicle v = createVehicle();
+        System.out.println("Planning delivery...");
+        v.deliver();
+    }
 }
-}
-

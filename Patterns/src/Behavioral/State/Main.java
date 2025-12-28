@@ -9,7 +9,6 @@ package State;
 public class Main {
     public static void main(String[] args) {
         System.out.println("State Pattern Demo - Gumball Machine");
-        System.out.println("=".repeat(50));
 
         GumballMachine machine = new GumballMachine(3);
 

@@ -1,6 +1,7 @@
 package Iterator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,11 +21,11 @@ public class Facebook implements SocialNetwork {
         profiles.add(new Profile("Charlie", "charlie@example.com"));
         profiles.add(new Profile("Diana", "diana@example.com"));
 
-        friends.put("alice@example.com", List.of("bob@example.com", "charlie@example.com"));
-        friends.put("bob@example.com", List.of("alice@example.com"));
+        friends.put("alice@example.com", Arrays.asList("bob@example.com", "charlie@example.com"));
+        friends.put("bob@example.com", Arrays.asList("alice@example.com"));
 
-        coworkers.put("alice@example.com", List.of("diana@example.com"));
-        coworkers.put("bob@example.com", List.of("charlie@example.com", "diana@example.com"));
+        coworkers.put("alice@example.com", Arrays.asList("diana@example.com"));
+        coworkers.put("bob@example.com", Arrays.asList("charlie@example.com", "diana@example.com"));
     }
 
     public Profile getProfileByEmail(String email) {

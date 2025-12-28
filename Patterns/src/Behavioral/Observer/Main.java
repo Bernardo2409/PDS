@@ -9,7 +9,6 @@ package Observer;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Observer Pattern Demo - Text Editor Events");
-        System.out.println("=".repeat(50));
 
         TextEditor editor = new TextEditor();
 

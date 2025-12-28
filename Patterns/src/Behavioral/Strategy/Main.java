@@ -10,7 +10,6 @@ package Strategy;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Strategy Pattern Demo - Payment Methods");
-        System.out.println("=".repeat(50));
 
         ShoppingCart cart = new ShoppingCart();
 
