@@ -58,5 +58,6 @@ public class Main {
         StreamingRegistry.getInstance().addPlaylist(playlist3);
         StreamingRegistry.getInstance().writeToFile();
         StreamingRegistry.getInstance().printFileContent();
+
     }
 }
